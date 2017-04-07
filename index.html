@@ -1,0 +1,890 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>МКхост landing page</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/my_styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align:center;
+        background-color: rgba(249, 251, 250, 0.86);
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+</style>
+<body>
+<div class="container-fluid">
+    <div class="row pozadina_gore" style="height: 150px;">
+        <div class="col-md- 12 btn-block">
+            <div class="text-center" style="color: white; height: 80px;">
+                <a href="https://www.mkhost.com.mk">
+                    <img src="img/MKhost-logo-original-medium.png" class="img img-responsive" style="margin: 0 auto;">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row pozadina" style="background-image: url('img/pozadina.jpg')">
+        <div class="container" style="padding: 70px;">
+            <div class="col-md-4">
+                <div class="panel panel-primary" style="border-radius: 0px; height: 440px;">
+                    <div class="panel-heading text-center">
+                        <h4 style="font-weight: bold;">Што нудиме?</h4>
+                    </div>
+                    <div class="panel-body" style="margin-top: 50px;">
+                        <div class="col-md-12" style="margin-top: 15px;">
+                            <a href="#id1" class="btn btn-default btn-block" style="background-color: rgb(245, 99, 50); color: white; font-weight: bold; font-size: 18px;">ВЕБ ХОСТИНГ</a>
+                        </div>
+                        <div class="col-md-12" style="margin-top: 15px;">
+                            <a href="#id2" class="btn btn-default btn-block" style="background-color: rgb(245, 99, 50); color: white; font-weight: bold; font-size: 18px;">ДОМЕНИ</a>
+                        </div>
+                        <div class="col-md-12">
+                            <a href="#id3" class="btn btn-default btn-block" style="margin-top: 11px; background-color: rgb(245, 99, 50); color: white; font-weight: bold; font-size: 18px;">СЕРВЕРИ</a>
+                        </div>
+                        <div class="col-md-12" style="margin-top: 15px; ">
+                            <a href="#id4" class="btn btn-default btn-block" style="background-color: rgb(245, 99, 50); color: white; font-weight: bold; font-size: 18px;">ВЕБ РАЗВОЈ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-primary text-center" style="border-radius: 0px; height: 440px;">
+                    <div class="panel-heading text-center">
+                        <h4 style="font-weight: bold;">Што Ви е потребно?</h4>
+                    </div>
+                    <div class="panel-body" style="margin-top: 20px;">
+                        <div class="radio_grupa1">
+                            <h5 style="font-size: 18px; font-weight: bold;">
+                                Колку веб сајтови?
+                            </h5>
+                            <input type="radio" name="radiog_lite" id="radio1" class="css-checkbox" />
+                            <label for="radio1" class="css-label radGroup1">1</label>
+
+                            <input type="radio" name="radiog_lite" id="radio2" class="css-checkbox" checked="checked"/>
+                            <label for="radio2" class="css-label radGroup1"><=5</label>
+
+                            <input type="radio" name="radiog_lite" id="radio3" class="css-checkbox" />
+                            <label for="radio3" class="css-label radGroup1"><=20</label>
+                        </div>
+
+                        <div class="radio_grupa2" style="margin-top: 20px;">
+                            <h5 style="font-size: 18px; font-weight: bold;">
+                                Колкав простор?
+                            </h5>
+                            <input type="radio" name="radiog_dark" id="radio4" class="css-checkbox" />
+                            <label for="radio4" class="css-label radGroup2">1 GB</label>
+                            <input type="radio" name="radiog_dark" id="radio5" class="css-checkbox" checked="checked"/>
+                            <label for="radio5" class="css-label radGroup2">5 GB</label>
+                            <input type="radio" name="radiog_dark" id="radio6" class="css-checkbox" />
+                            <label for="radio6" class="css-label radGroup2">25 GB</label>
+                        </div>
+
+                        <div class="radio_grupa3" style="margin-top: 20px;">
+                            <h5 style="font-size: 18px; font-weight: bold;">
+                                Колкав трансфер?
+                            </h5>
+                            <input type="radio" name="radiog_drugo" id="radio7" class="css-checkbox" />
+                            <label for="radio7" class="css-label radGroup3">40 GB</label>
+
+                            <input type="radio" name="radiog_drugo" id="radio8" class="css-checkbox" checked="checked"/>
+                            <label for="radio8" class="css-label radGroup3">300 GB</label>
+
+                            <input type="radio" name="radiog_drugo" id="radio9" class="css-checkbox" />
+                            <label for="radio9" class="css-label radGroup3">500 GB</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-primary" style="border-radius: 0px; height: 440px;">
+                    <div class="panel-heading text-center">
+                        <h4 style="font-weight: bold;">Ваше решение:</h4>
+                    </div>
+                    <div class="panel-body text-center" id="loading_ponuda" style="max-height: 272px; margin-top: 20px;">
+                        <!--<div class="glyphicon glyphicon-home" style="font-size: 30px; margin-top: 5px;"></div>-->
+                        <span class="fa-stack fa-4x text-center">
+                                <i class="fa fa-circle fa-stack-2x" style="color: rgb(51, 122, 183);"></i>
+                                <i class="fa fa-question fa-stack-1x" style="color: white;"></i>
+                        </span>
+                        <div class="text-center">
+                            <h5 style="font-size: 18px; font-weight: bold;">Откриете ја вашата понуда!</h5>
+                            <h5 style="font-size: 20px;"> ? мкд./мес.</h5>
+                            <h5><i>+ ? попуст на нов домен</i></h5>
+                            <button class="btn btn-default btn-block" onclick="validate_radio();" style="background-color: rgb(245, 99, 50); color: white; font-weight: bold; font-size: 18px;"><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span> Откријте...</button></div>
+                        <br><br>
+                    </div>
+                    <div class="panel-body text-center" id="basic_ponuda" style="max-height: 272px;">
+                        <!--<div class="glyphicon glyphicon-home" style="font-size: 30px; margin-top: 5px;"></div>-->
+                        <span class="fa-stack fa-4x text-center">
+                                <i class="fa fa-circle fa-stack-2x" style="color: rgb(51, 122, 183);"></i>
+                                <i class="fa fa-home fa-stack-1x" style="color: white;"></i>
+                        </span>
+                        <div class="text-center">
+                            <h5 style="font-size: 18px; font-weight: bold;">Basic понуда</h5>
+                            <h5 style="font-size: 20px;">240 мкд/месечно</h5>
+                            <h5><i>+10% попуст на нов домен</i></h5>
+                            <a href="https://www.mkhost.com.mk/" class="btn btn-default btn-block" style="background-color: rgb(245, 99, 50); color: white; font-weight: bold; font-size: 18px;">Дознај повеќе</a>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div class="panel-body text-center" id="business_ponuda" style="max-height: 272px;">
+                        <!--<div class="glyphicon glyphicon-home" style="font-size: 30px; margin-top: 5px;"></div>-->
+                        <span class="fa-stack fa-4x text-center">
+                                <i class="fa fa-circle fa-stack-2x" style="color: rgb(51, 122, 183);"></i>
+                                <i class="fa fa-suitcase fa-stack-1x" style="color: white;"></i>
+                        </span>
+                        <div class="basic_ponuda text-center">
+                            <h5 style="font-size: 18px; font-weight: bold;">Business понуда</h5>
+                            <h5 style="font-size: 20px;">393 мкд/мес.</h5>
+                            <h5><i>+ 50% попуст на нов домен</i></h5>
+                             <a href="https://www.mkhost.com.mk/" class="btn btn-default btn-block" style="background-color: rgb(245, 99, 50); color: white; font-weight: bold; font-size: 18px;">Дознај повеќе</a>
+                         </div>
+                         <br><br>
+                     </div>
+                     <div class="panel-body text-center" id="power_ponuda" style="max-height: 272px;">
+                         <!--<div class="glyphicon glyphicon-home" style="font-size: 30px; margin-top: 5px;"></div>-->
+                        <span class="fa-stack fa-4x text-center">
+                                <i class="fa fa-circle fa-stack-2x" style="color: rgb(51, 122, 183);"></i>
+                                <i class="fa fa-rocket fa-stack-1x" style="color: white;"></i>
+                        </span>
+                        <div class="basic_ponuda text-center">
+                            <h5 style="font-size: 18px; font-weight: bold;">Power понуда</h5>
+                            <h5 style="font-size: 20px;">590 мкд/мес.</h5>
+                            <h5><i>+ бесплатен домен</i></h5>
+                            <a href="https://www.mkhost.com.mk/" class="btn btn-default btn-block" style="background-color: rgb(245, 99, 50); color: white; font-weight: bold; font-size: 18px;">Дознај повеќе</a>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background-color: #333333;">
+        <div class="col-md- 12 btn-block">
+            <div class="text-center" style="color: white; height: 80px;">
+                <a href="https://www.mkhost.com.mk/web-hosting/">
+                    <h2 style="margin-top: 40px; font-weight: bold; color:white!important;">Изберете го најдобриот веб хостинг за вас <i class="fa fa-archive" aria-hidden="true" style="color: white;"></i></h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row pozadina"  style="background-image: url('img/pozadina2.jpg')" id="id1">
+        <a href="id1"></a>
+        <div class="container" style="padding: 70px;">
+            <div class="col-md-4">
+                <div class="offer offer-primary">
+                    <div class="shape">
+                        <div class="shape-text">
+                            <div class="glyphicon glyphicon-home"></div>
+                        </div>
+                    </div>
+                    <div class="offer-content text-center">
+                        <h3 class="lead" style="font-size: 25px; font-weight: bold;">
+                            <div style="margin-left: 4px;">Basic</div><i class="fa fa-info-circle btn" aria-hidden="true" style="color: #428bca;" onclick="openNav1();"></i>
+                        </h3>
+                        <p>
+                        <div class="glyphicon glyphicon-ok" style="color: #428bca; font-size: 20px;"></div> Хостирање на 1 веб сајт
+                        <br>
+                        <div class="glyphicon glyphicon-ok" style="color: #428bca; font-size: 20px;"></div> 1 GB Хостинг простор
+                        <br>
+                        <div class="glyphicon glyphicon-ok" style="color: #428bca; font-size: 20px;"></div> 40 GB Трансфер
+                        </p>
+                        <p style="font-size: 20px;">
+                            240 мкд/мес. <br>
+                            <i>+10% попуст на нов домен</i>
+                        </p>
+                        <br>
+                        <a href="https://www.mkhost.com.mk/" class="btn btn-default btn-block" style="background-color: rgb(245, 99, 50); color: white; font-weight: bold; font-size: 18px;">Повеќе инфо</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="offer offer-success">
+                    <div class="shape">
+                        <div class="shape-text">
+                            <div class="glyphicon glyphicon-briefcase"></div>
+                        </div>
+                    </div>
+                    <div class="offer-content text-center">
+                        <h3 class="lead" style="font-size: 25px; font-weight: bold;">
+                            <div style="margin-left: 4px;"> Business</div> <i class="fa fa-info-circle btn" aria-hidden="true" style="color:  #5cb85c;" onclick="openNav2();"></i>
+                        </h3>
+                        <p>
+                        <div class="glyphicon glyphicon-ok" style="color: #5cb85c; font-size: 20px;"></div> Хостирање на 5 веб сајтови
+                        <br>
+                        <div class="glyphicon glyphicon-ok" style="color: #5cb85c; font-size: 20px;"></div> 5 GB Хостинг простор
+                        <br>
+                        <div class="glyphicon glyphicon-ok" style="color:  #5cb85c; font-size: 20px;"></div> 300 GB Трансфер
+                        </p>
+                        <p style="font-size: 20px;">
+                            393 мкд/мес. <br>
+                            <i>+ 50% попуст на нов домен</i>
+                        </p>
+                        <br>
+                        <a href="https://www.mkhost.com.mk/" class="btn btn-default btn-block" style="background-color: rgb(245, 99, 50); color: white; font-weight: bold; font-size: 18px;">Повеќе инфо</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="offer offer-danger">
+                    <div class="shape">
+                        <div class="shape-text">
+                            <div class="glyphicon glyphicon-plane"></div>
+                        </div>
+                    </div>
+                    <div class="offer-content text-center">
+                        <h3 class="lead" style="font-size: 25px; font-weight: bold;">
+                            <div style="margin-left: 4px"> Power</div> <i class="fa fa-info-circle btn" aria-hidden="true" style="color: #d9534f;" onclick="openNav3();"></i>
+                        </h3>
+                        <p>
+                        <div class="glyphicon glyphicon-ok" style="color: #d9534f; font-size: 20px;"></div> Хостирање на 20 веб сајтови
+                        <br>
+                        <div class="glyphicon glyphicon-ok" style="color: #d9534f; font-size: 20px;"></div> 25 GB Хостинг простор
+                        <br>
+                        <div class="glyphicon glyphicon-ok" style="color: #d9534f; font-size: 20px;"></div> 500 GB Трансфер
+                        </p>
+                        <p style="font-size: 20px;">
+                            590 мкд/мес. <br>
+                            <i>+ бесплатен нов домен &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                        </p>
+                        <br>
+                        <a href="https://www.mkhost.com.mk/" class="btn btn-default btn-block" style="background-color: rgb(245, 99, 50); color: white; font-weight: bold; font-size: 18px;">Повеќе инфо</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background-color: #333333;">
+        <div class="col-md- 12 btn-block">
+            <div class="text-center" style="color: white; height: 80px;">
+                <a href="https://www.mkhost.com.mk/domains/">
+                    <h2 style="margin-top: 40px; font-weight: bold; color:white!important;">Купете го вашиот домен <i class="fa fa-tag" aria-hidden="true" style="color: white;"></i></h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row pozadina" style="background-image: url(img/pozadina.jpg)" id="id2">
+        <a href="id2"></a>
+        <div class="container" style="padding: 70px;">
+            <div class="col-md-12">
+                <div class="offer offer-primary">
+                    <div class="shape">
+                        <div class="shape-text">
+                            <div class="glyphicon glyphicon-shopping-cart"></div>
+                        </div>
+                    </div>
+                    <div class="offer-content text-center">
+                        <h3 class="lead" style="font-size: 25px; font-weight: bold;">
+                            Изберете:
+                        </h3>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12 col-lg-4">
+                                <img src="img/slika2.jpg" class="img img-responsive">
+                            </div>
+                            <div class="col-md-4  col-lg-4 text-center col-sm-12">
+                                <img src="img/mkext.png" class="img imr-responsive"> 899 МКД <br>
+                                <img src="img/commkext.png" class="img imr-responsive"> 999 МКД <br>
+                                <img src="img/comext.png" class="img imr-responsive"> 899 МКД <br>
+                                <img src="img/netext.png" class="img imr-responsive"> 999 МКД <br>
+                                <br>
+                                <span class="badge badge-default text-center btn-block" style="font-size: 15px;">15852 регистрирани домени</span><br>
+                                <span class="badge badge-default text-center btn-block" style="font-size: 15px;">24/7 професионална поддршка</span>
+                            </div>
+                            <div class="col-md-4 text-left col-sm-12  col-lg-4">
+                                <p>
+                                <div class="glyphicon glyphicon-ok" style="color: #5cb85c; font-size: 20px;"></div> Инстант активација за само 5 минути
+                                <br>
+                                <div class="glyphicon glyphicon-ok" style="color: #5cb85c; font-size: 20px;"></div> Регистрација од 1-10 години
+                                <br>
+                                <div class="glyphicon glyphicon-ok" style="color: #5cb85c; font-size: 20px;"></div> Бесплатна редирекција и ДНС хостинг со секој домен
+                                </p>
+                                <div class="btn btn-success btn-block" onclick="openNav()" style="color: white; font-weight: bold; font-size: 18px;">Регистрирани домени</div>
+                                <a href="https://www.mkhost.com.mk/" class="btn btn-default btn-block" style="background-color: rgb(245, 99, 50); color: white; font-weight: bold; font-size: 18px;">Повеќе инфо</a>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-md-12 text-center">
+                                <span class="badge badge-default btn-block">
+                                    <h4><b>БЕСПЛАТЕН ДОМЕН</b> со секој Power хостинг пакет  <i>590 МКД./МЕС.</i></h4>
+                                    <a href="https://www.mkhost.com.mk/" class="btn btn-success text-center" style="color: white; font-weight: bold; font-size: 18px;">НАРАЧАЈ ВЕДНАШ</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background-color: #333333;">
+        <div class="col-md- 12 btn-block">
+            <div class="text-center" style="color: white; height: 80px;">
+                <a href="https://www.mkhost.com.mk/servers/">
+                    <h2 style="margin-top: 40px; font-weight: bold; color:white!important;">Широк избор на сервери <i class="fa fa-server" aria-hidden="true" style="color: white;"></i></h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row pozadina" style="background-image: url('img/pozadina3.jpg')" id="id3">
+        <a href="id3"></a>
+       <div class="container" style="padding: 70px;">
+           <div class="col-md-12">
+               <div class="offer offer-primary">
+                   <div class="shape">
+                       <div class="shape-text">
+                           <div class="glyphicon glyphicon-tags"></div>
+                       </div>
+                   </div>
+                   <div class="offer-content">
+                       <h3 class="lead text-center">
+                           <h4 class="text-center" style="font-size: 25px; font-weight: bold;">Изберете сервер во:</h4>
+                       </h3>
+                       <div class="col-md-12">
+                           <div class="col-md-3">
+                              <a href="https://www.mkhost.com.mk/servers/">
+                                  <img src="img/slika.png" class="img img-responsive">
+                              </a>
+                           </div>
+                           <div class="col-md-3 text-center">
+                               <h4>Америка</h4>
+                               <a href="https://www.mkhost.com.mk/servers/">
+                                   <img src="img/usa.png" class="img img-responsive">
+                               </a>
+                           </div>
+                           <div class="col-md-3 text-center" style="padding-bottom: 15px;">
+                               <h4>Македонија</h4>
+                               <a href="https://www.mkhost.com.mk/servers/">
+                                   <img src="img/mak.png" class="img img-responsive">
+                               </a>
+                           </div>
+                           <div class="col-md-3 text-left">
+                               <div class="glyphicon glyphicon-ok" style="color: #428bca;font-size: 19px;"></div> 24/7 бесплатно одржување<br>
+                               <div class="glyphicon glyphicon-ok" style="color: #428bca; font-size: 19px;"></div> Помош со инфраструктура<br>
+                               <div class="glyphicon glyphicon-ok" style="color: #428bca; font-size: 19px;"></div> Загарантиран квалитет<br>
+                               <div class="glyphicon glyphicon-ok" style="color: #428bca; font-size: 19px;"></div> Високи перформанси<br>
+                               <div class="glyphicon glyphicon-ok" style="color: #428bca; font-size: 18px;"></div> Сигурен дата центар<br>
+                               <div class="glyphicon glyphicon-ok" style="color: #428bca; font-size: 18px;"></div> Брза активација<br>
+                               <a href="https://www.mkhost.com.mk/" class="btn btn-default btn-block" style="background-color: rgb(245, 99, 50); color: white; font-weight: bold; font-size: 18px;">Повеќе инфо</a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+    <div class="row" style="background-color: #333333;">
+        <div class="col-md- 12 btn-block">
+            <div class="text-center" style="color: white; height: 80px;">
+                <a href="https://www.mkhost.com.mk/web-design/">
+                    <h2 style="margin-top: 40px; font-weight: bold; color:white!important;">Изберете ја правилната веб услуга <i class="fa fa-code" aria-hidden="true" style="color: white;"></i></h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row pozadina" style="background-image: url(img/pozadina2.jpg)" id="id4">
+        <a href="id4"></a>
+        <div class="container" style="padding: 70px;">
+            <div class="col-md-12">
+                <div class="offer offer-primary">
+                    <div class="shape">
+                        <div class="shape-text">
+                            <div class="glyphicon glyphicon-blackboard"></div>
+                        </div>
+                    </div>
+                    <div class="offer-content text-center">
+                        <h3 class="lead">
+                            <h4 style="font-size: 25px; font-weight: bold;">Услуги за веб развој:</h4>
+                        </h3>
+                        <div class="col-md-12 text-center" style="font-weight: bold; margin-top: 15px;">
+                            <div class="list-group list-group-horizontal">
+                                <a href="https://www.mkhost.com.mk/web-design/" class="list-group-item">Веб дизајн</a>
+                                <a href="https://www.mkhost.com.mk/web-design/" class="list-group-item">Веб апликации</a>
+                                <a href="https://www.mkhost.com.mk/web-design/" class="list-group-item">Интернет продавници</a>
+                                <a href="https://www.mkhost.com.mk/web-design/" class="list-group-item">Оптимизација на веб страни</a>
+                                <a href="https://www.mkhost.com.mk/web-design/" class="list-group-item">Водење социјални медиуми</a>
+                            </div>
+                        </div>
+                        <h3 class="lead">
+                            <h4 style="font-size: 25px; font-weight: bold;">Технологии кои ги користиме:</h4>
+                        </h3>
+                        <div class="col-md-12 text-center" style="font-weight: bold;">
+                            <p>
+                            <div class="glyphicon glyphicon-ok" style="color: #428bca; font-size: 20px;"></div> HTML5
+                            <br>
+                            <div class="glyphicon glyphicon-ok" style="color: #428bca; font-size: 20px;"></div> CSS3
+                            <br>
+                            <div class="glyphicon glyphicon-ok" style="color: #428bca; font-size: 20px;"></div> JQuery
+                            <br>
+                            <div class="glyphicon glyphicon-ok" style="color: #428bca; font-size: 20px;"></div> PHP
+                            <br>
+                            <div class="glyphicon glyphicon-ok" style="color: #428bca; font-size: 20px;"></div> MYSQL
+                            <br>
+                            <div class="glyphicon glyphicon-ok" style="color: #428bca; font-size: 20px;"></div> ANGULARJS
+                            <br>
+                            <div class="glyphicon glyphicon-ok" style="color: #428bca; font-size: 20px;"></div> Wordpress
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center" style="padding-bottom: 15px;">
+                        <a href="https://www.mkhost.com.mk/web-design/" class="btn btn-default" style="background-color: rgb(245, 99, 50); color: white; font-weight: bold; font-size: 18px;">Повеќе инфо</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row" style="background-color: rgb(240, 240, 240);">
+            <div class="container text-center" style="margin-top: 30px; padding: 50px;">
+                <div class="row">
+                    <div class="col-md-4" style="padding-left: 180px;">
+                        <h4><i class="fa fa-phone-square" aria-hidden="true"></i> +389 2 2779 444</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.mkhost.com.mk/" class="btn btn-default btn-block" style="background-color: #333333!important; color:white!important; font-size: 18px; font-weight: bold;"><i class="fa fa-laptop" aria-hidden="true"></i> Посетете не!</a>
+                    </div>
+                    <div class="col-md-4" style="padding-right: 120px;">
+                        <h4><i class="fa fa-envelope" aria-hidden="true"></i> info@mkhost.com.mk</h4>
+                    </div>
+                    <br><br><br>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h6>© МКхост 2005 - 2017 Сите права се задржани.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 100px; color:#1B75BC;">&times;</a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/procreditbank.png" class="img img-responsive">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/prospera.png" class="img img-responsive">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/sistina.png" class="img img-responsive">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/eeh-hospital.png" class="img img-responsive">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/badel.png" class="img img-responsive">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/tikves.png" class="img img-responsive">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/bucenkozjak.png" class="img img-responsive">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/capitol.png" class="img img-responsive">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/stonebridge.png" class="img img-responsive">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/atlantis.png" class="img img-responsive">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/peugeot.png" class="img img-responsive">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/hyindai.png" class="img img-responsive">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/logozikol.png" class="img img-responsive">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/termalift.png" class="img img-responsive">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/adora.png" class="img img-responsive">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/lukoil.png" class="img img-responsive">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/duna.png" class="img img-responsive">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/tocka.png" class="img img-responsive">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/hbo.png" class="img img-responsive">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/cineplexx.png" class="img img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="mySidenav1" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()" style="font-size: 100px; color:#1B75BC;">&times;</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="font-weight: bold;">1 parked домен</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: #428bca;font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">Неограничен број на емаил адреси</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: #428bca;font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;"> Неограничен број на бази</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: #428bca;font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">Joomla & WordPress поддршка</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: #428bca;font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">300+ Бесплатни скрипти (Softaculus)</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: #428bca;font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">SpamExperts - заштита од спам</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: #428bca;font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">Неограничена виртуелна меморија</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: #428bca;font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">Физичка меморија: 1024MB (1GB)</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: #428bca;font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">Процесорска брзина: 100% (1 jадро)</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: #428bca;font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">Избор на PHP верзија (5.4, 5.5, 5.6, 7.0)</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: #428bca;font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">Избор на серверска локација (Македонија или Америка)</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: #428bca;font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">cPanel - Контролен панел</h2>
+                    <div class="glyphicon glyphicon-ok" style="color: #428bca;font-size: 30px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mySidenav2" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()" style="font-size: 100px; color:#5cb85c;">&times;</a>
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 style="font-weight: bold;">5 parked домени</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="glyphicon glyphicon-ok" style="color: #5cb85c;font-size: 30px;"></div>
+                        <h2 style="font-weight: bold;">5 addon домени</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="glyphicon glyphicon-ok" style="color: #5cb85c;font-size: 30px;"></div>
+                        <h2 style="font-weight: bold;">  Неограничен број на емаил адреси</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="glyphicon glyphicon-ok" style="color: #5cb85c;font-size: 30px;"></div>
+                        <h2 style="font-weight: bold;">Неограничен број на бази</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="glyphicon glyphicon-ok" style="color: #5cb85c;font-size: 30px;"></div>
+                        <h2 style="font-weight: bold;">Joomla & WordPress поддршка</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="glyphicon glyphicon-ok" style="color: #5cb85c;font-size: 30px;"></div>
+                        <h2 style="font-weight: bold;"> 300+ Бесплатни скрипти (Softaculus)</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="glyphicon glyphicon-ok" style="color: #5cb85c;font-size: 30px;"></div>
+                        <h2 style="font-weight: bold;"> SpamExperts - заштита од спам</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="glyphicon glyphicon-ok" style="color: #5cb85c;font-size: 30px;"></div>
+                        <h2 style="font-weight: bold;">Неограничена виртуелна меморија</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="glyphicon glyphicon-ok" style="color: #5cb85c;font-size: 30px;"></div>
+                        <h2 style="font-weight: bold;">Физичка меморија: 2048MB (2GB)</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="glyphicon glyphicon-ok" style="color: #5cb85c;font-size: 30px;"></div>
+                        <h2 style="font-weight: bold;"> Процесорска брзина: 200% (2 jадра)</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="glyphicon glyphicon-ok" style="color: #5cb85c;font-size: 30px;"></div>
+                        <h2 style="font-weight: bold;">Избор на PHP верзија (5.4, 5.5, 5.6, 7.0)</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="glyphicon glyphicon-ok" style="color: #5cb85c;font-size: 30px;"></div>
+                        <h2 style="font-weight: bold;">Избор на серверска локација (Македонија или Америка)</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="glyphicon glyphicon-ok" style="color: #5cb85c;font-size: 30px;"></div>
+                        <h2 style="font-weight: bold;">cPanel - Контролен панел</h2>
+                        <div class="glyphicon glyphicon-ok" style="color: #5cb85c;font-size: 30px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mySidenav3" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()" style="font-size: 100px; color:	#d9534f">&times;</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="font-weight: bold;">5 parked домени</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: #d9534f; font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">5 addon домени</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: #d9534f; font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">  Неограничен број на емаил адреси</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: 	#d9534f; font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">Неограничен број на бази</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: 	#d9534f; font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">Joomla & WordPress поддршка</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: 	#d9534f; font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;"> 300+ Бесплатни скрипти (Softaculus)</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: 	#d9534f;  font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;"> SpamExperts - заштита од спам</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: 	#d9534f;  font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">Неограничена виртуелна меморија</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: 	#d9534f;  font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">Физичка меморија: 2048MB (2GB)</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: 	#d9534f; font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;"> Процесорска брзина: 200% (2 jадра)</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: 	#d9534f; font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">Избор на PHP верзија (5.4, 5.5, 5.6, 7.0)</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: 	#d9534f; font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">Избор на серверска локација (Македонија или Америка)</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="glyphicon glyphicon-ok" style="color: 	#d9534f; font-size: 30px;"></div>
+                    <h2 style="font-weight: bold;">cPanel - Контролен панел</h2>
+                    <div class="glyphicon glyphicon-ok" style="color: 	#d9534f; font-size: 30px;"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- Static Modal -->
+    <div class="modal modal-static fade" id="processing-modal" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <img src="http://www.travislayne.com/images/loading.gif" class="icon" />
+                        <h4>Processing... <button type="button" class="close" style="float: none;" data-dismiss="modal" aria-hidden="true">×</button></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        function openNav1() {
+            document.getElementById("mySidenav1").style.width = "100%";
+        }
+
+        function closeNav1() {
+            document.getElementById("mySidenav1").style.width = "0";
+        }
+
+        function openNav2() {
+            document.getElementById("mySidenav2").style.width = "100%";
+        }
+
+        function closeNav2() {
+            document.getElementById("mySidenav2").style.width = "0";
+        }
+
+        function openNav3() {
+            document.getElementById("mySidenav3").style.width = "100%";
+        }
+
+        function closeNav3() {
+            document.getElementById("mySidenav3").style.width = "0";
+        }
+    </script>
+    <script>
+
+        document.getElementById('basic_ponuda').style.display = 'none';
+        document.getElementById('business_ponuda').style.display = 'none';
+        document.getElementById('power_ponuda').style.display = 'none';
+
+        function validate_radio() {
+
+            var pom1_1 = document.getElementById('radio1');
+            var pom1_2 = document.getElementById('radio2');
+            var pom1_3 = document.getElementById('radio3');
+
+            var pom2_1 = document.getElementById('radio4');
+            var pom2_2 = document.getElementById('radio5');
+            var pom2_3 = document.getElementById('radio6');
+
+            var pom3_1 = document.getElementById('radio7');
+            var pom3_2 = document.getElementById('radio8');
+            var pom3_3 = document.getElementById('radio9');
+
+            if (pom1_1.checked && pom2_1.checked && pom3_1.checked)
+            {
+                document.getElementById('loading_ponuda').style.display = 'none';
+                document.getElementById('basic_ponuda').style.display = 'block';
+            }
+            else if(pom1_2.checked && pom2_2.checked && pom3_2.checked)
+            {
+                document.getElementById('loading_ponuda').style.display = 'none';
+                document.getElementById('business_ponuda').style.display = 'block';
+            }
+            else if(pom1_3.checked && pom2_3.checked && pom3_3.checked)
+            {
+                document.getElementById('loading_ponuda').style.display = 'none';
+                document.getElementById('power_ponuda').style.display = 'block';
+            }
+            else if(pom1_1.checked && pom2_1.checked )
+            {
+                document.getElementById('loading_ponuda').style.display = 'none';
+                document.getElementById('basic_ponuda').style.display = 'block';
+            }
+            else if(pom1_1.checked && pom3_1.checked)
+            {
+                document.getElementById('loading_ponuda').style.display = 'none';
+                document.getElementById('basic_ponuda').style.display = 'block';
+            }
+            else if(pom2_1.checked && pom3_1.checked)
+            {
+                document.getElementById('loading_ponuda').style.display = 'none';
+                document.getElementById('basic_ponuda').style.display = 'block';
+            }
+            else if(pom1_2.checked && pom2_2.checked)
+            {
+                document.getElementById('loading_ponuda').style.display = 'none';
+                document.getElementById('business_ponuda').style.display = 'block';
+            }
+            else if(pom1_2.checked && pom3_2.checked)
+            {
+                document.getElementById('loading_ponuda').style.display = 'none';
+                document.getElementById('business_ponuda').style.display = 'block';
+            }
+            else if(pom2_2.checked && pom3_2.checked)
+            {
+                document.getElementById('loading_ponuda').style.display = 'none';
+                document.getElementById('business_ponuda').style.display = 'block';
+            }
+            else if(pom1_3.checked && pom2_3.checked)
+            {
+                document.getElementById('loading_ponuda').style.display = 'none';
+                document.getElementById('power_ponuda').style.display = 'block';
+            }
+            else if(pom1_3.checked && pom3_3.checked)
+            {
+                document.getElementById('loading_ponuda').style.display = 'none';
+                document.getElementById('power_ponuda').style.display = 'block';
+            }
+            else if(pom2_3.checked && pom3_3.checked)
+            {
+                document.getElementById('loading_ponuda').style.display = 'none';
+                document.getElementById('power_ponuda').style.display = 'block';
+            }
+        }
+    </script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/npm.js"></script>
+</body>
+</html>
